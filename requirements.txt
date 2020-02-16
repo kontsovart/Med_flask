@@ -1,0 +1,11 @@
+Collecting freeze
+  Downloading http://172.16.0.3:3141/root/pypi/+f/817/4c224667b9e96/freeze-1.0.10.tar.gz
+Collecting six (from freeze)
+  Downloading http://172.16.0.3:3141/root/pypi/+f/335/0809f0555b11f/six-1.12.0-py2.py3-none-any.whl
+Building wheels for collected packages: freeze
+  Running setup.py bdist_wheel for freeze: started
+  Running setup.py bdist_wheel for freeze: finished with status 'done'
+  Stored in directory: /home/albatros/.cache/pip/wheels/f7/f5/e3/21407d1939ed5e900c5279b2c2dda05ce360b8116ff9fa2d60
+Successfully built freeze
+Installing collected packages: six, freeze
+Successfully installed freeze-1.0.10 six-1.12.0

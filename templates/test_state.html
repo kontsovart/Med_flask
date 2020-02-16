@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action = "" method = "post" >
+    Description <br>
+    <select name="description">
+  {%  for i in description %}
+      <option value="{{ i.id }}">{{ i.info }}</option>
+  {% endfor %}
+</select>
+<br>Prev_states<br>
+    <select name="prev_states" size="4" multiple>
+  {%  for i in prev_states %}
+      <option value="{{ i.id }}">{{ i.id }}</option>
+  {% endfor %}
+</select>
+<br>Transitions<br>
+<select name="transitions" size="4" multiple>
+  {%  for i in transitions %}
+      <option value="{{ i.id }}">{{ i.id }}</option>
+  {% endfor %}
+</select>
+<br>
+<input type="submit" value="Save" name="button">
+<input type="submit" value="Delete" name="button">
+<input type="submit" value="Update" name="button">
+<br> State <br>
+<select name="new_state">
+  {%  for i in prev_states %}
+      <option value="{{ i.id }}">{{ i.id }}</option>
+  {% endfor %}
+</select>
+    <br>
+    On update Description <br>
+    <select name="description">
+  {%  for i in description %}
+      <option value="{{ i.id }}">{{ i.info }}</option>
+  {% endfor %}
+</select>
+<br> On update Prev_states<br>
+    <select name="prev_states" size="4" multiple>
+  {%  for i in prev_states %}
+      <option value="{{ i }}">{{ i }}</option>
+  {% endfor %}
+</select>
+<br>On update Transitions<br>
+<select name="transitions" size="4" multiple>
+  {%  for i in transitions %}
+      <option value="{{ i.id }}">{{ i.id }}</option>
+  {% endfor %}
+</select>
+</form>
+</body>
+</html>

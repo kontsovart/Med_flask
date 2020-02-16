@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>HTML Forms</h2>
+
+<form action = "" method = "post">
+  Next_state:<br>
+  <input type="text" name="next_state" value="">
+  <br>
+  Condition:<br>
+  <input type="text" name="condition" value="">
+  <br><br>
+    Condition on update:<br>
+  <input type="text" name="update_condition" value="">
+  <br>
+     State on update:<br>
+  <input type="text" name="update_state" value="">
+  <br>
+  <input type="submit" value="Submit" name="button">
+  <input type="submit" value="Delete" name="button">
+    <input type="submit" value="Update" name="button">
+</form>
+<div style="height:120px;width:120px;border:1px solid #cc4347;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+
+    {%  for i in data %}
+        <h3> Hello {{ i.next_state }}  {{ i.condition }}</h3>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>
